@@ -6,51 +6,73 @@
 <!-- <meta http-equiv="refresh" content="0;url=http://ziv.one/links/app/"> -->
 <title>ניהול אירועים</title>
 <style>
-body{
-	padding:0;
-	margin:0;
-	text-align:center;
-	font:24px arial,sans-serif;
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font: 24px arial, sans-serif;
 }
-.content{
-	position:absolute;
-	top:45%;
-	left:50%;
-	right:50%;
-	margin-top:-150px;
-	margin-right:-150px;
-	margin-left:-150px;
+.content {
+	position: absolute;
+	top: 45%;
+	right: 50%;
+	margin-top: -140px;
+	margin-right: -105px;
 }
-.slow{
-	font-size:14px;
-	padding-top:40px;
+.slow {
+	font-size: 14px;
+	padding-top: 40px;
 }
-.icon{
-	background:#F44336;
-	display:inline-block;
-	width:210px;
-	text-align:center;
-	padding:38px 0;
-	margin-bottom:60px;
-	border-radius:50%;
-	-webkit-border-radius:50%;
-	border:none;
-		animation:background 10s linear infinite alternate;
-		-webkit-animation:background 10s linear infinite alternate;
+.icon {
+	background: #F44336;
+	display: inline-block;
+	width: 210px;
+	height: 210px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 60px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: none;
+	box-shadow: 1px 2px 10px #bbb;
+	animation: background 10s linear infinite alternate;
+	-webkit-animation: background 10s linear infinite alternate;
+}
+.icon img {
+	max-width: 210px;
+}
+@keyframes background {
+	0% {
+		background-color: #e57373;
 	}
-	@keyframes background {
-		0% {background-color:#F44336;}
-		20% {background-color:#009688;}
-		40% {background-color:#3F51B5;}
-		60% {background-color:#CDDC39;}
-		80% {background-color:#607D8B;}
+	20% {
+		background-color: #AED581;
 	}
-	@-webkit-keyframes background {
-		0% {background-color:#F44336;}
-		20% {background-color:#009688;}
-		40% {background-color:#3F51B5;}
-		60% {background-color:#CDDC39;}
-		80% {background-color:#607D8B;}
+	40% {
+		background-color: #9575CD;
+	}
+	60% {
+		background-color: #FFB74D;
+	}
+	80% {
+		background-color: #4DB6AC;
+	}
+}
+@-webkit-keyframes background {
+	0% {
+		background-color: #e57373;
+	}
+	20% {
+		background-color: #AED581;
+	}
+	40% {
+		background-color: #9575CD;
+	}
+	60% {
+		background-color: #FFB74D;
+	}
+	80% {
+		background-color: #4DB6AC;
 	}
 }
 </style>
@@ -65,7 +87,7 @@ body{
 		</div>
 	</div>
 	<script>
-	window.open("http://ziv.one/links/app/", '_self')
+	window.open("http://ziv.one/links/app/", '_self');
 	setTimeout(function() {
 		var div = document.createElement("div");
 		div.innerHTML = '<div class="slow">ניסיון החיבור לוקח זמן ארוך מידי<br/>נא בדוק את חיבור האינטרנט שלך</div>';
