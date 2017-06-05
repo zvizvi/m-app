@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.ziv"
+		versionCode="1"
+		version   = "0.0.1">
+		<name>
+			ניהול אירועים
+		</name>
+
+		<author href="http://ziv.one">
+			ziv.one
+		</author>
+
+		<icon src="icon.png" />
+		<splash src="splash.png"/>
+
+		<preference name="permissions" value="none"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+
+		<preference name="phonegap-version" value="3.7.0" />
+		<gap:platform name="android" />
+	</widget>

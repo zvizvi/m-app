@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+<!-- <meta http-equiv="refresh" content="0;url=http://ziv.one/links/app/"> -->
+<title>ניהול אירועים</title>
+<style>
+body{
+	padding:0;
+	margin:0;
+	text-align:center;
+	font:24px arial,sans-serif;
+}
+.content{
+	position:absolute;
+	top:45%;
+	left:50%;
+	right:50%;
+	margin-top:-150px;
+	margin-right:-150px;
+	margin-left:-150px;
+}
+.slow{
+	font-size:14px;
+	padding-top:40px;
+}
+.icon{
+	background:#F44336;
+	display:inline-block;
+	width:210px;
+	text-align:center;
+	padding:38px 0;
+	margin-bottom:60px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	border:none;
+		animation:background 10s linear infinite alternate;
+		-webkit-animation:background 10s linear infinite alternate;
+	}
+	@keyframes background {
+		0% {background-color:#F44336;}
+		20% {background-color:#009688;}
+		40% {background-color:#3F51B5;}
+		60% {background-color:#CDDC39;}
+		80% {background-color:#607D8B;}
+	}
+	@-webkit-keyframes background {
+		0% {background-color:#F44336;}
+		20% {background-color:#009688;}
+		40% {background-color:#3F51B5;}
+		60% {background-color:#CDDC39;}
+		80% {background-color:#607D8B;}
+	}
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<div class="icon">
+			<img src="media/bicon.png" />
+		</div>
+		<div class="loading">
+			טוען...
+		</div>
+	</div>
+	<script>
+	window.open("http://ziv.one/links/app/", '_self')
+	setTimeout(function() {
+		var div = document.createElement("div");
+		div.innerHTML = '<div class="slow">ניסיון החיבור לוקח זמן ארוך מידי<br/>נא בדוק את חיבור האינטרנט שלך</div>';
+		div.className = 'alert';
+		div.id = 'alert';
+		document.querySelector('.content').appendChild(div)
+	}, 5000);
+	</script>
+</body>
+</html>
