@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; media-src *">
   <!-- <meta http-equiv="refresh" content="0;url=http://events.reware.io"> -->
   <title>ניהול אירועים</title>
   <style>
@@ -103,7 +104,7 @@
     </div>
   </div>
   <script>
-    window.open("http://events.reware.io", '_self');
+    window.open("http://events.reware.io", '_blank');
     setTimeout(function () {
       var div = document.createElement("div");
       div.innerHTML = '<div class="slow">ניסיון החיבור לוקח זמן ארוך מידי<br/>נא בדוק את חיבור האינטרנט שלך</div>';

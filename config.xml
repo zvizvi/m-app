@@ -15,8 +15,21 @@
 		<splash src="splash.png"/>
 
 		<preference name="permissions" value="none"/>
+
 		<feature name="http://api.phonegap.com/1.0/network"/>
 		<access origin="*" subdomains="true" />
 		<preference name="phonegap-version" value="cli-6.5.0" />
+		<plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.1" />
 		<gap:platform name="android" />
+		<allow-navigation href="*" />
+		<allow-intent href="http://*/*" />
+		<allow-intent href="https://*/*" />
+		<allow-intent href="tel:*" />
+		<allow-intent href="sms:*" />
+		<allow-intent href="mailto:*" />
+		<allow-intent href="geo:*" />
+		<platform name="android">
+			<allow-intent href="market:*" />
+		</platform>
+
 	</widget>
