@@ -3,12 +3,12 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.ziv"
 		versionCode="1"
-		version   = "0.0.1">
+		version   = "0.0.2">
 		<name>ניהול אירועים</name>
 		<description></description>
 
-		<author href="ziv.one">
-			ziv.one
+		<author href="reware.io">
+			reware.io
 		</author>
 
 		<icon src="icon.png" />
