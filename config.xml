@@ -14,12 +14,13 @@
 		<icon src="icon.png" />
 		<splash src="splash.png"/>
 
-		<preference name="permissions" value="none"/>
-
 		<feature name="http://api.phonegap.com/1.0/network"/>
 		<access origin="*" subdomains="true" />
+		<preference name="permissions" value="none"/>
+		<preference name="loadUrlTimeoutValue" value="700000"/>
 		<preference name="phonegap-version" value="cli-6.5.0" />
 		<plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.1" />
+		<plugin name="cordova-plugin-whitelist" source="npm" spec="~1" />
 		<gap:platform name="android" />
 		<allow-navigation href="*" />
 		<allow-intent href="http://*/*" />
